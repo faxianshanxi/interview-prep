@@ -1,6 +1,5 @@
 'use strict';
 
-require('rootpath')();
 const findHighestProductOfThree = require('./findHighestProductOfThree');
 
 function runTestCase(c) {

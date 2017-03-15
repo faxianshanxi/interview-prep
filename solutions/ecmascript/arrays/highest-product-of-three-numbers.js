@@ -11,4 +11,6 @@ function findHighestProductOfThree(arr) {
     return minProduct > maxProduct ? minProduct : maxProduct;
 }
 
-module.exports = findHighestProductOfThree;
+if(module) {
+    module.exports = findHighestProductOfThree;
+}
