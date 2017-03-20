@@ -14,4 +14,9 @@ const run = () => {
         const expected = test.output;
         console.log(actual === expected);
     });
+    testCases.forEach(test => {
+        const actual = reverse(reverse(test.input));
+        const expected = test.input;
+        console.log(actual === expected);
+    })
 };
