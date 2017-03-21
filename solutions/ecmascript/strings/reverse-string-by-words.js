@@ -8,4 +8,9 @@ class ReverseByWord {
     }
 }
 
-module.exports = ReverseByWord;
+const reverseByWord = (input) => input.split(' ').reverse().join(' ');
+
+module.exports = {
+    ReverseByWord,
+    reverseByWord
+};

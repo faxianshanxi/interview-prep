@@ -4,6 +4,4 @@ function removeSpaces(input) {
     return input.split(' ').join('');
 }
 
-if(module) {
-    module.exports = removeSpaces;
-}
+module.exports = removeSpaces;

@@ -15,6 +15,4 @@ class Range {
     }
 }
 
-if(module) {
-    module.exports = Range;
-}
+module.exports = Range;

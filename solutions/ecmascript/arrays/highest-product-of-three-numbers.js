@@ -1,7 +1,7 @@
 'use strict';
 
 function findHighestProductOfThree(arr) {
-    if(arr.length <= 3) {
+    if (arr.length <= 3) {
         return arr.reduce((prev, curr) => prev * curr, 1);
     }
     arr.sort((curr, next) => curr - next);
@@ -11,6 +11,4 @@ function findHighestProductOfThree(arr) {
     return minProduct > maxProduct ? minProduct : maxProduct;
 }
 
-if(module) {
-    module.exports = findHighestProductOfThree;
-}
+module.exports = findHighestProductOfThree;

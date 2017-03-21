@@ -12,6 +12,4 @@ class SumOfArray {
     }
 }
 
-if(module) {
-    module.exports = SumOfArray;
-}
+module.exports = SumOfArray;

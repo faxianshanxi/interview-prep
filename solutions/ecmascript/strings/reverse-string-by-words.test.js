@@ -1,4 +1,5 @@
-const ReverseByWord = require('./reverse-string-by-words');
+const ReverseByWord = require('./reverse-string-by-words').ReverseByWord;
+const reverseByWord = require('./reverse-string-by-words').reverseByWord;
 
 (() => {
     const testCases = [
@@ -13,6 +14,12 @@ const ReverseByWord = require('./reverse-string-by-words');
         const actual = new ReverseByWord(test.input).reversed;
         const expected = test.output;
         console.log(actual === expected);
-    }
+    };
     testCases.forEach(run);
+    const runToo = (test) => {
+        const actual = reverseByWord(test.input);
+        const expected = test.output;
+        console.log(actual === expected);
+    };
+    testCases.forEach(runToo);
 })();
